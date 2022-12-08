@@ -7,3 +7,42 @@
     font-family: 'allThingPinkSkinny';
     src: url(../fonts/All_Things_Pink_Skinny.ttf);
 }
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* position: fixed;
+    z-index: 1; */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+  }
+
+.main-logo {
+    left: 50%;
+    top: 100;
+    margin-left: 290px !important;
+}
+
+@media screen and (max-width: 991px) {
+    .ocultar-div{
+        visibility: hidden;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
