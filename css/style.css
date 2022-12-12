@@ -12,17 +12,19 @@ footer {
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 2em;
     position: absolute;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f1f1;
     position: relative;
-    padding-bottom: 58px;
-    min-height: 200vh;
+    padding-bottom: 1em;
+    min-height: 320vh;
 }
 
 .main-logo {
