@@ -14,14 +14,18 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body background="images/fondoBody.png">
       <script src="js/bootstrap.min.js" ></script>
-      <div class="text-center" style="background-image: url(images/fondo.png); height: 250px;" >
+
+      <div class="text-center" style="background-image: url(images/fondo.png); height: 250px; width: 100%;" >
         <div>
-          <img src="images/NewCanvas1.png" width="200" height="200">
+          <a href="index.html">
+            <img src="images/NewCanvas1.png" width="200" height="200">
+          </a>
           <h1 style="color: white; font-family: 'allThingPink'; font-size: xxx-large;"> Miuudey | <a href="https://www.instagram.com/miuudey_art/"><img src="images/instagram-w.png"  style="width: 50px; height: 50px;"></a></h1>
         </div>
       </div>
+
       <div>
         <nav class="navbar navbar-expand-lg" style="background-color: #754F9C;">
           <div class="container-fluid">
@@ -30,11 +34,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
               <div class="navbar-nav mx-auto">
-                <a class="nav-link" href="aboutMe.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">About me</a>
-                <a class="nav-link" href="ilustrations.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Illustrations</a>
-                <a class="nav-link" href="animations.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Animations</a>
-                <a class="nav-link" href="contact.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Contact</a>
-              </div> 
+                <!-- <a class="nav-link" href="aboutMe.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">About me</a> -->
+                <a class="nav-link" href="ilustrations.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Ilustraciones</a>
+                <a class="nav-link" href="projects.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Proyectos</a>
+                <a class="nav-link" href="contact.html" style="font-size: xx-large; font-family:  'allThingPink'; color: white;">Contacto</a>
+              </div>  
             </div>
             <div class="m-0 order-0 order-md-1 position-absolute main-logo ocultar-div">
               <a class="mx-auto img-fluid" href="#">
@@ -44,11 +48,13 @@
           </div>
         </nav>
       </div>
-      <div style="margin-top: 200px;">
-        <div class="text-center" style="float: left; width: 40%;">
-          <img src="images/contact.png" style="float: left;">
-          <div style="text-align: center;">
-            <h5 style="font-family:  'allThingPink'; font-size: xx-large; margin-top: 50px; ">
+      <div class="text-center">
+        <h5  style="font-family:  'allThingPink'; font-size: xx-large; margin-top: 50px; color: white;">CONTACTO</h5>
+      </div>
+      <div style="width: 100%; display: flex; justify-content: center; margin-top: 100px;">
+        <div class="text-center" style="width: 60%;">
+          <div >
+            <h5 style="font-family:  'allThingPink'; font-size: xx-large; color: white;">
               If you have any questions regarding commissions, 
               please complete the contact form and I will answer as soon as possible.
               <br>
@@ -57,31 +63,33 @@
 
             </h5>
           </div>
+          <div style="margin-top: 50px;">
+            <form id="contact" action="https://formsubmit.co/6839941f2523f79e30787d3cb432e1c3" method="POST" style="width: 70%; text-align: center; margin-left: 100px;">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="First Name" aria-label="FirstName" aria-describedby="basic-addon1" name="FirstName" required>
+                <input type="text" class="form-control" placeholder="Second Name" aria-label="SecondName" aria-describedby="basic-addon1" name="SecondName" required>
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="Email" required>
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Subject" aria-label="Subject" aria-describedby="basic-addon1" name="Subject" required>
+              </div>
+    
+              <div class="input-group">
+                <textarea placeholder="Message"  class="form-control" aria-label="Message" name="Message" required></textarea>
+              </div>
+              <br>
+              <button class="btn btn-primary" type="submit" style="width: 30%;">Send</button>
+              <input type="hidden" name="_next" value="https://di-salazard.github.io/MiuudeyPage/success.html">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
         </div>
-        <div style="float: right; width: 60%;">
-          <form id="contact" action="https://formsubmit.co/6839941f2523f79e30787d3cb432e1c3" method="POST" style="width: 70%; text-align: center; margin-left: 100px;">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="First Name" aria-label="FirstName" aria-describedby="basic-addon1" name="FirstName" required>
-              <input type="text" class="form-control" placeholder="Second Name" aria-label="SecondName" aria-describedby="basic-addon1" name="SecondName" required>
-            </div>
-            
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="Email" required>
-            </div>
-            
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Subject" aria-label="Subject" aria-describedby="basic-addon1" name="Subject" required>
-            </div>
-  
-            <div class="input-group">
-              <textarea placeholder="Message"  class="form-control" aria-label="Message" name="Message" required></textarea>
-            </div>
-            <br>
-            <button class="btn btn-primary" type="submit" style="width: 30%;">Send</button>
-            <input type="hidden" name="_next" value="https://di-salazard.github.io/MiuudeyPage/success.html">
-            <input type="hidden" name="_captcha" value="false">
-          </form>
-        </div>
+      </div>
+
       <footer>
         <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Miuudey <img src="images/instagram-w.png"  style="width: 30px; height: 30px;"></p>
       </footer>

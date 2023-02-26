@@ -15,7 +15,8 @@ footer {
     padding: 2em;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
+    max-width: 200%;
     margin-top: auto;
 }
 
@@ -24,7 +25,7 @@ body {
     background-color: #f1f1f1;
     position: relative;
     padding-bottom: 1em;
-    min-height: 320vh;
+    min-height: 200vh;
 }
 
 .main-logo {
@@ -51,13 +52,52 @@ body {
 }
 
 .gallery img{
-    width: 230px;
+    width: 300px;
     padding: 5px;
-    filter: grayscale(100%);
     transition: 1s;
 }
 
-.gallery img:hover{ 
+/* .gallery img:hover{ 
     filter: grayscale(0);
     transform: scale(1.1);
+} */
+
+img{
+    max-width: 100%;
+    height: auto;
 }
+
+figure{
+    
+    position: relative;
+}
+
+figcaption{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 15px;
+    font: 50px Verdana;
+    color: white;
+}
+
+.gallery figure:hover figcaption{
+    display: block;
+}
+
+/* .ir-arriba {
+	display:none;
+	padding:20px;
+	background:#624A92;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+} */
