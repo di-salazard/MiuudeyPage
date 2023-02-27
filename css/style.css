@@ -8,6 +8,11 @@
     src: url(../fonts/All_Things_Pink_Skinny.ttf);
 }
 
+@font-face {
+    font-family: 'prStartk';
+    src: url(../fonts/prstartk.ttf);
+}
+
 footer {
     text-align: center;
     background-color: #333;
